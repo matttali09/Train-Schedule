@@ -1,0 +1,17 @@
+/* jumbotron styling */
+.jumbotron {
+    background-color: rgb(59, 25, 2);
+    color: white;
+}
+
+/* Headers styling */
+.card-header {
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+}
+
+/* card styling */
+.card {
+    border: 1px solid blue;
+}
