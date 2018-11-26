@@ -22,7 +22,7 @@ $("#add-train-btn").on("click", function (event) {
     var trainStart = $("#start-input").val().trim();
     var trainRate = $("#rate-input").val().trim();
 
-    // Create local "temporary" object for holding employee data
+    // Create local "temporary" object for holding train data
     var newTrain = {
         name: trainName,
         destination: dest,
@@ -30,7 +30,7 @@ $("#add-train-btn").on("click", function (event) {
         rate: trainRate,
     };
 
-    // Upload employee data to the database
+    // Upload train data to the database
     console.log("train added coming");
     
     database.ref().push(newTrain);
