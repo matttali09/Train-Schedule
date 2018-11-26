@@ -19,7 +19,7 @@ $("#add-train-btn").on("click", function (event) {
     // Grab user input and format the train start in moment js proper format (returned as string)
     var trainName = $("#train-name-input").val().trim();
     var dest = $("#destination-input").val().trim();
-    var trainStart = moment($("#start-input").val().trim(), "HH:mm");
+    var trainStart = $("#start-input").val();
     var trainRate = $("#rate-input").val().trim();
 
     // Create local "temporary" object for holding employee data
@@ -27,11 +27,14 @@ $("#add-train-btn").on("click", function (event) {
         name: trainName,
         destination: dest,
         start: trainStart,
-        rate: trainRate
+        rate: trainRate,
     };
 
     // Upload employee data to the database
+    console.log("train added coming");
+    
     database.ref().push(newTrain);
+    console.log("train added")
 
     // Log user input everything to console
     console.log(trainName.name);
@@ -46,6 +49,7 @@ $("#add-train-btn").on("click", function (event) {
     $("#destination-input").val("");
     $("#start-input").val("");
     $("#rate-input").val("");
+    return false;
 });
 
 // Create Firebase event for adding trains to the database and a row in the html table when a user adds an entry
