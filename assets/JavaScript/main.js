@@ -19,7 +19,7 @@ $("#add-train-btn").on("click", function (event) {
     // Grab user input and format the train start in moment js proper format (returned as string)
     var trainName = $("#train-name-input").val().trim();
     var dest = $("#destination-input").val().trim();
-    var trainStart = $("#start-input").val();
+    var trainStart = $("#start-input").val().trim();
     var trainRate = $("#rate-input").val().trim();
 
     // Create local "temporary" object for holding employee data
