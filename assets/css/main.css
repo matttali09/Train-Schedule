@@ -1,17 +1,23 @@
+/* body styling */
+body {
+    background-image: linear-gradient(to bottom right, lightblue, blue);
+}
+
 /* jumbotron styling */
 .jumbotron {
-    background-color: rgb(59, 25, 2);
+    background: url("../images/train-tunnel.png");
+    background-size: 935px 260px;
     color: white;
 }
 
 /* Headers styling */
 .card-header {
-    background-color: blue;
+    background-color: darkgray;
     color: white;
     font-weight: bolder;
 }
 
 /* card styling */
 .card {
-    border: 1px solid blue;
+    border: 1px solid darkgray;
 }
