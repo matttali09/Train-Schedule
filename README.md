@@ -4,6 +4,6 @@ An Interactive train schedule using Firebase and moment.js that can be used by a
 
 Users input a train
 
-![traingif1](images/traingif1.gif?raw=true "traingif1")
+![traingif1](assets/images/traingif1.gif?raw=true "traingif1")
 
 and then it is displayed on the train schedule area
